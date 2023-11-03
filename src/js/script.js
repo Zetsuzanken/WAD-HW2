@@ -21,62 +21,59 @@ const profileIcon = document.getElementById("UserProfilePic");
      event.stopPropagation();
  });
 
- 
- const jsonUrl = 'https://github.com/HopelessSituationWarrior/WAD-HW2/raw/main/src/json/posts.json';
-
  // Load and display posts from the JSON file
- fetch(jsonUrl)
-   .then((response) => response.json())
-   .then((data) => {
-     const postsContainer = document.querySelector('.posts');
- 
-     data.forEach((post) => {
-       const postElement = document.createElement('div');
-       postElement.classList.add('post');
- 
-       const postHeader = document.createElement('div');
-       postHeader.classList.add('post-header');
-       const profilePhoto = document.createElement('img');
-       profilePhoto.classList.add('profile-photo');
-       profilePhoto.src = 'res/images/profile.png';
-       profilePhoto.alt = 'Profile Photo';
-       const postDate = document.createElement('div');
-       postDate.classList.add('post-date');
-       postDate.textContent = post.timestamp;
- 
-       postHeader.appendChild(profilePhoto);
-       postHeader.appendChild(postDate);
- 
-       const postContent = document.createElement('div');
-       postContent.classList.add('post-content');
-       if (post.photo) {
-         const largePhoto = document.createElement('img');
-         largePhoto.classList.add('large-photo');
-         largePhoto.src = post.photo;
-         largePhoto.alt = 'Large Photo';
-         postContent.appendChild(largePhoto);
-       }
-       const postText = document.createElement('div');
-       postText.classList.add('post-text');
-       postText.innerHTML = `<p>${post.text}</p>`;
- 
-       postContent.appendChild(postText);
- 
-       const postLike = document.createElement('div');
-       postLike.classList.add('post-like');
-       const likeButton = document.createElement('img');
-       likeButton.classList.add('like-button');
-       likeButton.src = 'res/images/like.png';
-       likeButton.alt = 'Like Button';
-       postLike.appendChild(likeButton);
- 
-       postElement.appendChild(postHeader);
-       postElement.appendChild(postContent);
-       postElement.appendChild(postLike);
- 
-       postsContainer.appendChild(postElement);
-     });
-   })
-   .catch((error) => {
-     console.error('Error loading posts:', error);
-   });
+fetch('posts.json')
+.then((response) => response.json())
+.then((data) => {
+  const postsContainer = document.querySelector('.posts');
+
+  data.forEach((post) => {
+    const postElement = document.createElement('div');
+    postElement.classList.add('post');
+
+    const postHeader = document.createElement('div');
+    postHeader.classList.add('post-header');
+    const profilePhoto = document.createElement('img');
+    profilePhoto.classList.add('profile-photo');
+    profilePhoto.src = 'res/images/profile.png';
+    profilePhoto.alt = 'Profile Photo';
+    const postDate = document.createElement('div');
+    postDate.classList.add('post-date');
+    postDate.textContent = post.timestamp;
+
+    postHeader.appendChild(profilePhoto);
+    postHeader.appendChild(postDate);
+
+    const postContent = document.createElement('div');
+    postContent.classList.add('post-content');
+    if (post.photo) {
+      const largePhoto = document.createElement('img');
+      largePhoto.classList.add('large-photo');
+      largePhoto.src = post.photo;
+      largePhoto.alt = 'Large Photo';
+      postContent.appendChild(largePhoto);
+    }
+    const postText = document.createElement('div');
+    postText.classList.add('post-text');
+    postText.innerHTML = `<p>${post.text}</p>`;
+
+    postContent.appendChild(postText);
+
+    const postLike = document.createElement('div');
+    postLike.classList.add('post-like');
+    const likeButton = document.createElement('img');
+    likeButton.classList.add('like-button');
+    likeButton.src = 'res/images/like.png';
+    likeButton.alt = 'Like Button';
+    postLike.appendChild(likeButton);
+
+    postElement.appendChild(postHeader);
+    postElement.appendChild(postContent);
+    postElement.appendChild(postLike);
+
+    postsContainer.appendChild(postElement);
+  });
+})
+.catch((error) => {
+  console.error('Error loading posts:', error);
+});
