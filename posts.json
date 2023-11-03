@@ -1,0 +1,67 @@
+[
+    {
+      "id": 1,
+      "author": "John Doe",
+      "timestamp": "2023-11-03",
+      "text": "Just had a great lunch!",
+      "photo": "res/images/tartu.jpg"
+    },
+    {
+      "id": 2,
+      "author": "Alice Smith",
+      "timestamp": "2023-11-02",
+      "text": "Tartu 2023",
+      "photo": "res/images/tartu2.jpg"
+    },
+    {
+      "id": 3,
+      "author": "Bob Johnson",
+      "timestamp": "2023-11-01",
+      "text": "Anyone knows in which room is the lab today?"
+    },
+    {
+      "id": 4,
+      "author": "Eve Williams",
+      "timestamp": "2023-10-31",
+      "text": "Halloween costume party."
+    },
+    {
+      "id": 5,
+      "author": "Charlie Brown",
+      "timestamp": "2023-10-30",
+      "text": "Hey, that place looks somewhat familiar?!",
+      "photo": "res/images/tartu.jpg"
+    },
+    {
+      "id": 6,
+      "author": "Grace Davis",
+      "timestamp": "2023-10-29",
+      "text": "Fantastic results on that last project of ours."
+    },
+    {
+      "id": 7,
+      "author": "David Wilson",
+      "timestamp": "2023-10-28",
+      "text": "Working on a new project."
+    },
+    {
+      "id": 8,
+      "author": "Sophia Lee",
+      "timestamp": "2023-10-27",
+      "text": "Ein jäger a day keeps the doctor away?",
+      "photo": "res/images/tartu.jpg"
+    },
+    {
+      "id": 9,
+      "author": "Michael Garcia",
+      "timestamp": "2023-10-26",
+      "text": "Visited a beautiful museum today.",
+      "photo": "res/images/tartu2.jpg"
+    },
+    {
+      "id": 10,
+      "author": "Olivia Martinez",
+      "timestamp": "2023-10-25",
+      "text": "Learning a new language!"
+    }
+]  
