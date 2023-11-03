@@ -1,0 +1,70 @@
+[
+    {
+      "id": 1,
+      "author": "John Doe",
+      "timestamp": "2023-11-03T12:00:00Z",
+      "text": "Just had a great lunch!",
+      "photo": "res/images/tartu.jpg"
+    },
+    {
+      "id": 2,
+      "author": "Alice Smith",
+      "timestamp": "2023-11-02T15:30:00Z",
+      "text": "Exploring a new hiking trail today.",
+      "photo": "res/images/tartu2.jpg"
+    },
+    {
+      "id": 3,
+      "author": "Bob Johnson",
+      "timestamp": "2023-11-01T09:15:00Z",
+      "text": "Good morning, world!"
+    },
+    {
+      "id": 4,
+      "author": "Eve Williams",
+      "timestamp": "2023-10-31T20:45:00Z",
+      "text": "Halloween costume party 🎃👻",
+      "photo": "res/images/tartu.jpg"
+    },
+    {
+      "id": 5,
+      "author": "Charlie Brown",
+      "timestamp": "2023-10-30T14:20:00Z",
+      "text": "Enjoying a sunny day at the beach.",
+      "photo": "res/images/tartu2.jpg"
+    },
+    {
+      "id": 6,
+      "author": "Grace Davis",
+      "timestamp": "2023-10-29T18:10:00Z",
+      "text": "A peaceful evening in the park.",
+      "photo": "res/images/tartu.jpg"
+    },
+    {
+      "id": 7,
+      "author": "David Wilson",
+      "timestamp": "2023-10-28T11:55:00Z",
+      "text": "Working on a new project."
+    },
+    {
+      "id": 8,
+      "author": "Sophia Lee",
+      "timestamp": "2023-10-27T19:50:00Z",
+      "text": "Cooking my favorite recipe.",
+      "photo": "res/images/tartu.jpg"
+    },
+    {
+      "id": 9,
+      "author": "Michael Garcia",
+      "timestamp": "2023-10-26T17:05:00Z",
+      "text": "Visited a beautiful museum today.",
+      "photo": "res/images/tartu2.jpg"
+    },
+    {
+      "id": 10,
+      "author": "Olivia Martinez",
+      "timestamp": "2023-10-25T13:40:00Z",
+      "text": "Learning a new language!",
+      "photo": "res/images/tartu.jpg"
+    }
+  ]  
