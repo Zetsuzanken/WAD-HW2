@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Post</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="navbar-right">
+                <img id="UserProfilePic" src="res/images/profile.png" alt="Profile Photo">
+            </div>
+        </nav>
+        <!-- Post adding section -->
+        <div class="addpost-content">
+            <div class="addpost-content2">
+                <form action="index.html"> <!-- Redirection after clicking 'create post' -->
+                    <div id="postinput"> <!-- Post body input row -->
+                        <div id="text1"><label class="guidetext" for="post-body">Post Body</label></div>
+                        <textarea id="post-body" name="post-body" rows="5" placeholder="Text..." required></textarea>
+                    </div>
+                    <div id="fileinput"> <!-- Post file input row -->
+                        <div id="text2"><label class="guidetext" for="file">Select File</label></div>
+                        <input type="file" id="file" name="file" accept=".jpg, .jpeg, .png, .gif" />
+                    </div>
+                    <div class="center-btn"> <!-- Create post button -->
+                        <button type="submit" class="create-post-btn">Create Post</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

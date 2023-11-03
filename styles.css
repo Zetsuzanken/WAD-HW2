@@ -1,0 +1,370 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Define overall page styles */
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/*
+*
+*
+* INDEX PAGE CSS  
+*
+*
+*/
+
+/* Wrapper for the entire content */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    padding: 10px 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+}
+
+.nav-links,
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.nav-links a {
+    margin-right: 10px;
+}
+
+.navbar-right {
+    float: right;
+}
+
+#UserProfilePic {
+    max-height: 40px;
+    border: 2px solid #0077b6;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+.navbar a[href="index.html"],
+.navbar a[href="addPost.html"] {
+    background-color: transparent;
+    transition: background-color 0.3s;
+}
+
+.navbar a[href="index.html"]:hover,
+.navbar a[href="addPost.html"]:hover {
+    background-color: #555;
+}
+
+/* Margin container styles */
+.margin-container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 15%;
+    background-color: #f0f0f0;
+    z-index: 0;
+}
+
+.left-margin {
+    left: 0;
+}
+
+.right-margin {
+    right: 0;
+}
+
+/* Content section styles */
+.content {
+    width: 65%;
+    margin: 60px auto 60px;
+    padding: 20px;
+    position: relative;
+}
+
+.large-photo {
+    max-width: 100%;
+}
+
+/* Posts section styles */
+.posts {
+    width: 96%;
+    margin: 15px auto;
+    flex-grow: 1;
+}
+
+.post {
+    background-color: #333;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.profile-photo {
+    width: 40px;
+    height: 40px;
+}
+
+.post-date {
+    color: #999;
+    font-size: 12px;
+}
+
+.post-text {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.post .post-text p {
+    font-size: 16px;
+}
+
+.like-button {
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 10px;
+    border: none;
+    background-color: transparent;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    height: auto;
+}
+
+/* Styles all paragraph elements that are nested in a div */
+div > p {
+    color: white;
+}
+
+/* Adds 30px margin to .post elements that come immediately after another .post element */
+.post + .post {
+    margin-top: 30px;
+}
+
+/* Styles all hyperlink elements inside .post-text that come after the first hyperlink element */
+.nav-links a ~ a {
+    color:#b0b0b0
+}
+
+/* This removed the "No file chosen" text that was next to the "Choose file" button on addPost page. From: https://stackoverflow.com/a/69993586 */
+input[type='file'] {
+    font-size: 0;
+}
+
+::file-selector-button {
+    font-size: initial;
+}
+
+
+/*
+*
+*
+* ADDPOST PAGE CSS  
+*
+*
+*/
+
+/* Create post button styles */
+.create-post-btn {
+    background-color: #595959;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.create-post-btn:hover {
+    background-color: #555;
+}
+
+.center-btn {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+    align-items: center;
+}
+
+/* Post input box styles */
+
+#postinput {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* File input styles */
+
+#fileinput {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.guidetext {
+    color: #fff;
+    flex: 0.4;
+}
+
+textarea {
+    resize: none;
+}
+
+#text1 {
+    margin-right: 15px;
+}
+
+#text2 {
+    margin-right: 15px;
+}
+
+.addpost-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.addpost-content2 {
+    max-width: 400px;
+    width: 75%;
+    padding: 40px;
+    border-radius: 5px;
+    background-color: #333;
+}
+
+/*
+*
+*
+* LOGIN PAGE CSS  
+*
+*
+*/
+
+/* Login page flexbox container div - id selector*/
+#login-flexbox-container {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login form div - class selector */
+.login-form {
+    max-width: 400px;
+    width: 75%;
+    padding: 40px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+
+/* Input field - class selector */
+.input-field {
+    width: 75%;
+    margin: 8px;
+    padding: 8px;
+    border-radius: 2px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Login button - class selector */
+.login-btn {
+    background-color: #595959;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 25px;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+/* Button hover style - pseudo class*/
+.login-btn:hover {
+    background-color: #555;
+}
+
+/* Button active style - pseudo class*/
+.login-btn:active {
+    transform: scale(0.97);
+}
+
+/* Login form paragraph style - descendant selector */
+.login-form p {
+    font-size: 18px;
+}
+
+/* Login form links style - descendant selector */
+.login-form a {
+    color: lightblue;
+    font-size: 18px;
+}
+
+/* Login form link hover style - pseudo class*/
+.login-form a:hover {
+    color: white;
+}
